@@ -1,0 +1,14 @@
+[package]
+name = "hello-client-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+adaptivemsg = { path = "../adaptivemsg-rust" }
+hello = { path = "../hello-server-go" }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.38", features = ["rt-multi-thread", "macros", "time"] }
+anyhow = "1.0"
+clap = { version = "=4.4.18", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
