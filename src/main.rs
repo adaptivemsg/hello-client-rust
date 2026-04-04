@@ -1,6 +1,6 @@
 use adaptivemsg as am;
 use clap::Parser;
-use hello::{HelloReply, HelloRequest};
+use hello::api::hello::{HelloReply, HelloRequest};
 use tracing::{info, warn};
 
 #[derive(Parser)]

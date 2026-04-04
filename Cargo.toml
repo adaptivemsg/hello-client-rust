@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-adaptivemsg = { path = "../adaptivemsg-rust" }
-hello = { path = "../hello-server-go" }
+adaptivemsg = { git = "https://github.com/adaptivemsg/adaptivemsg-rust.git" }
+hello = { git = "https://github.com/adaptivemsg/hello-server-go.git" }
 serde = { version = "1.0", features = ["derive"] }
 tokio = { version = "1.38", features = ["rt-multi-thread", "macros", "time"] }
 anyhow = "1.0"
