@@ -206,17 +206,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "edd0f118536f44f5ccd48bcb8b111bdc3de888b58c74639dfb034a357d0f206d"
 
 [[package]]
-name = "erased-serde"
-version = "0.4.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d2add8a07dd6a8d93ff627029c51de145e12686fbc36ecb298ac22e74cf02dec"
-dependencies = [
- "serde",
- "serde_core",
- "typeid",
-]
-
-[[package]]
 name = "getrandom"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -263,7 +252,7 @@ dependencies = [
  "adaptivemsg",
  "anyhow",
  "clap",
- "hello-server-rust",
+ "hello-server-go",
  "serde",
  "tokio",
  "tracing",
@@ -271,18 +260,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "hello-server-rust"
-version = "0.1.0"
-source = "git+https://github.com/adaptivemsg/hello-server-rust.git#e8efbf0502a30eaab6d14ecc8c654f8c11fcf1c6"
+name = "hello-server-go"
+version = "0.0.0"
+source = "git+https://github.com/adaptivemsg/hello-server-go.git#23a85db1de334bfd4fb37bb41ca362cbd8c28912"
 dependencies = [
  "adaptivemsg",
- "anyhow",
- "clap",
- "inventory",
  "serde",
- "tokio",
- "tracing-subscriber",
- "typetag",
 ]
 
 [[package]]
@@ -738,36 +721,6 @@ dependencies = [
  "thread_local",
  "tracing-core",
  "tracing-log",
-]
-
-[[package]]
-name = "typeid"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc7d623258602320d5c55d1bc22793b57daff0ec7efc270ea7d55ce1d5f5471c"
-
-[[package]]
-name = "typetag"
-version = "0.2.21"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "be2212c8a9b9bcfca32024de14998494cf9a5dfa59ea1b829de98bac374b86bf"
-dependencies = [
- "erased-serde",
- "inventory",
- "once_cell",
- "serde",
- "typetag-impl",
-]
-
-[[package]]
-name = "typetag-impl"
-version = "0.2.21"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "27a7a9b72ba121f6f1f6c3632b85604cac41aedb5ddc70accbebb6cac83de846"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
 ]
 
 [[package]]

@@ -5,7 +5,8 @@ edition = "2021"
 
 [dependencies]
 adaptivemsg = { git = "https://github.com/adaptivemsg/adaptivemsg-rust.git" }
-hello_server = { git = "https://github.com/adaptivemsg/hello-server-rust.git", package = "hello-server-rust" }
+hello_server = { git = "https://github.com/adaptivemsg/hello-server-go.git", package = "hello-server-go" }
+#hello_server = { git = "https://github.com/adaptivemsg/hello-server-rust.git", package = "hello-server-rust" }
 serde = { version = "1.0", features = ["derive"] }
 tokio = { version = "1.38", features = ["rt-multi-thread", "macros", "time"] }
 anyhow = "1.0"
